@@ -7,7 +7,7 @@ int file_open( char *name)
  */
 }
 
-file_write(int fd, offset, data[])
+int file_write(int fd, char data[], int size)
 {
  /* inode = openfds[fd]
  * based on offset, decide to alloc a block or overwrite
@@ -18,4 +18,14 @@ file_write(int fd, offset, data[])
 	offset = findoffsetfrom inode
  * disk_write(offset,data)
  */
+}
+
+
+int file_read(int fd, char read_buf[], int size)
+{
+}
+
+
+int file_close(int fd)
+{
 }
